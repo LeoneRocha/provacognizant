@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    .radio + .radio,
+    .checkbox + .checkbox {
+        margin-top: 10px !important;
+    }
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <fieldset>
+            <legend>Calcular</legend>
+            <div class="form-group ">
+                <div class="row">
+                    <!-- Form Name -->
+                    <!-- Text input-->
+                    <div class="col-md-6">
+                        <label class="control-label" for="Entrada1">Entrada 1</label>
+                        <input id="Entrada1" name="Entrada1" type="text" placeholder="Digite um valor númerico" class="form-control input-md form-group">
+                        @*<span class="help-block">Digite um valor númerico</span>*@
+                    </div>
+                    <div class="col-md-6">
+                        <label class="control-label" for="Entrada2">Entrada 2</label>
+                        <input id="Entrada2" name="Entrada2" type="text" placeholder="Digite um valor númerico" class="form-control input-md form-group">
+                        @*<span class="help-block">Digite um valor númerico</span>*@
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <label class="control-label" for="radios">Escolha a operação</label>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="radio col-md-3">
+                                    <label for="operador-0">
+                                        <input type="radio" name="operador" id="operador-0" value="+" class="clsOperador">
+                                        Somar
+                                    </label>
+                                </div>
+                                <div class="radio col-md-3">
+                                    <label for="operador-1">
+                                        <input type="radio" name="operador" id="operador-1" value="-" class="clsOperador">
+                                        Subtrair
+                                    </label>
+                                </div>
+                                <div class="radio col-md-3">
+                                    <label for="operador-2">
+                                        <input type="radio" name="operador" id="operador-2" value="*" class="clsOperador">
+                                        Multiplicar
+                                    </label>
+                                </div>
+                                <div class="radio col-md-3">
+                                    <label for="operador-3">
+                                        <input type="radio" name="operador" id="operador-3" value="/" class="clsOperador">
+                                        Dividir
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button id="calcular" name="calcular" class="btn btn-primary">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</div>
+<div class="alert alert-success" role="alert" id="divInfoResult" style="display:none;">
+    <strong>Resultado do cálculo: </strong> <span id="resultCalculadora">XXX</span>
+</div>

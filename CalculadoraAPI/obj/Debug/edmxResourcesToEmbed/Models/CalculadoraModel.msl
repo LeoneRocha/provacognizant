@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CalculadoraContextoEDMStoreContainer" CdmEntityContainer="leonecosta11Entities">
+    <EntitySetMapping Name="UltimosCalculos">
+      <EntityTypeMapping TypeName="CalculadoraContextoEDM.UltimosCalculo">
+        <MappingFragment StoreEntitySet="UltimosCalculos">
+          <ScalarProperty Name="Operacao" ColumnName="Operacao" />
+          <ScalarProperty Name="Entrada2" ColumnName="Entrada2" />
+          <ScalarProperty Name="Entrada1" ColumnName="Entrada1" />
+          <ScalarProperty Name="Resultado" ColumnName="Resultado" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

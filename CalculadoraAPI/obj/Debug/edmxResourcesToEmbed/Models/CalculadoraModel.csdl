@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CalculadoraContextoEDM" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="leonecosta11Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UltimosCalculos" EntityType="CalculadoraContextoEDM.UltimosCalculo" />
+  </EntityContainer>
+  <EntityType Name="UltimosCalculo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Resultado" Type="Double" Nullable="false" />
+    <Property Name="Entrada1" Type="Double" Nullable="false" />
+    <Property Name="Entrada2" Type="Double" Nullable="false" />
+    <Property Name="Operacao" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Resultados anteriores";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+<div class="row">
+    <div class="col-md-12"> 
+        <table class="table table-striped">
+            <tr>
+                <th>
+                    Entrada 1
+                </th>
+                <th>
+                    Entrada 2
+                </th>
+                <th>
+                    Operação
+                </th>
+                <th>
+                    Resultado
+                </th>
+            </tr>
+            @foreach (var item in ViewBag.listaResultados)
+            {
+                <tr>
+                    <td>
+                        @item.Entrada1
+                    </td>
+                    <td>
+                        @item.Entrada2
+                    </td>
+                    <td>
+                        @item.Operacao
+                    </td>
+                    <td>
+                        @item.Resultado
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
